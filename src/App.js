@@ -37,6 +37,7 @@ function App() {
           <img
             style={{ width: "60px", marginRight: "0.3em" }}
             src="https://image.shutterstock.com/z/stock-vector--electronic-gadgets-with-screen-in-a-icons-showing-an-idea-of-network-devices-1134205409.jpgj"
+            alt="img"
           />
           Gadgets Suggestions
         </h1>
