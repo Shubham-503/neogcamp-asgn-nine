@@ -21,15 +21,10 @@ const Accessories = [
 
 function App() {
   const [data, setData] = useState(mobiles);
-  function handleMobilesClick() {
-    setData(mobiles);
+  function handleClick(item) {
+    setData(item);
   }
-  function handleLaptopsClick() {
-    setData(Laptops);
-  }
-  function handleAccessoriesClick() {
-    setData(Accessories);
-  }
+
   return (
     <div className="app">
       <div className="app__title">
@@ -44,9 +39,9 @@ function App() {
         <p>Checkout these gadgets before buying something new.</p>
       </div>
       <ul className="app__items ">
-        <li onClick={handleMobilesClick}>Mobiles</li>
-        <li onClick={handleLaptopsClick}>Laptops</li>
-        <li onClick={handleAccessoriesClick}>Accessories</li>
+        <li onClick={() => handleClick(mobiles)}>Mobiles</li>
+        <li onClick={() => handleClick(Laptops)}>Laptops</li>
+        <li onClick={() => handleClick(Accessories)}>Accessories</li>
       </ul>
       <hr />
       <ul className="app__desc">
